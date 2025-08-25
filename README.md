@@ -1,6 +1,8 @@
 # AI Debate for Science: A Case Study in Particle Physics Strategy
 
-Companion code and minimal data for our paper on structured LLM debate for particle-physics strategy; includes scripts to run the debates and compute win rates/Elo.
+### Companion code and minimal data for our paper on structured LLM debate for particle-physics strategy; includes scripts to run the debates and compute win rates/Elo.
+
+TL;DR: A reproducible LLM-debate protocol for science-strategy choices, tested on particle-physics roadmaps. We randomize context order, balance label assignment, compare a best-of-N opening vs temperature-controlled debaters, and report stance win rates and Elo-like (Bradley–Terry) ratings to support expert deliberation.
 
 --- 
 
