@@ -3,8 +3,6 @@
 
 **Prototype – AI Debate for particle-physics strategy (P5 2023 + FCC 2025, neutral multi-corpus)**
 
-This project explores domain-specific decision-making with automated judging and diverse opening arguments.
-
 - Large-language-model **“Strategy 1 vs Strategy 2”** debates over a **combined evidence context**: the US **[P5 (2023)](https://www.usparticlephysics.org/2023-p5-report/)** report and CERN’s **[FCC Feasibility Study (2025)](https://fcc.web.cern.ch/)**.  
 - Two GPT-style agents argue, an LLM judge decides who’s more persuasive (emitting a strict `WINNER: Strategy-1` / `WINNER: Strategy-2` line), and the whole exchange (with token stats + context) is logged.
 --- 
