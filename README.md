@@ -7,8 +7,6 @@ This project explores domain-specific decision-making with automated judging and
 
 - Large-language-model **“Strategy 1 vs Strategy 2”** debates over a **combined evidence context**: the US **[P5 (2023)](https://www.usparticlephysics.org/2023-p5-report/)** report and CERN’s **[FCC Feasibility Study (2025)](https://fcc.web.cern.ch/)**.  
 - Two GPT-style agents argue, an LLM judge decides who’s more persuasive (emitting a strict `WINNER: Strategy-1` / `WINNER: Strategy-2` line), and the whole exchange (with token stats + context provenance) is logged to disk.
-- Inspired by recent work on **LLM debate protocols** such as [Debating with More Persuasive LLMs Leads to More Truthful Answers](https://arxiv.org/abs/2402.06782) (Khan et al., 2024).
-
 --- 
 
 ## How it works – high-level flow
@@ -48,10 +46,9 @@ python scripts/run_debate.py --repeats 1 --turns 2 --quiet --out runs/YYYYMMDD/t
 ## Repo layout 
 
 ```
-llm-debate/              – GitHub root
+llm-debate/              
 │
 ├─ src/ai_debate_p5/       – importable package
-│   ├─ __init__.py
 │   ├─ debate_engine.py    – debate loop & openings
 │   ├─ judge_module.py     – impartial LLM judge
 │   ├─ stats_module.py     – global counters / helpers
