@@ -1,6 +1,6 @@
 # AI Debate for Science: A Case Study in Particle Physics Strategy
 
-Companion code and minimal data for our paper on structured LLM debate for particle-physics strategy; includes scripts to run the debates, and compute win rates/Elo.
+Companion code and minimal data for our paper on structured LLM debate for particle-physics strategy; includes scripts to run the debates and compute win rates/Elo.
 
 --- 
 
