@@ -15,11 +15,7 @@ def chat_extra_kwargs(model_name: str, temperature: float) -> dict:
         return {
             "max_tokens": config.MAX_TOKENS_PER_RESPONSE,
             "temperature": temperature,
-        }
-
-# def supports_logprobs(model_name: str) -> bool:
-#     """Return True iff the model family allows the `logprobs` option."""
-#     return not model_name.startswith("o")      # o-series models currently do not support logprobs  
+        }  
 
 def supports_logprobs(model_name: str) -> bool:
     # Explicit map is safest
