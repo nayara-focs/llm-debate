@@ -64,7 +64,7 @@ llm-debate/
 |   └─ context_p5_plus_fcc.txt
 |  
 ├─ runs/                   – outputs (logs, stats, Elo CSVs)
-|   └─ debate_sample
+|   └─ debate_sample.json
 |
 ├─ requirements.txt
 ├─ config.py
