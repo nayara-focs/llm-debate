@@ -38,26 +38,17 @@ Quant stats  →  win-rate · average tokens / turn · Elo (BT)
 ## Quick start
 
 ```bash
-# 1  Clone & enter the repo
-git clone https://github.com/nayara-focs/ai-debate-p5.git
-cd ai-debate-p5
 
-# 2  (Optional) activate a venv / conda env, then install deps
-pip install -r requirements.txt
-
-# 3  Tell the code where your key lives
-export OPENAI_API_KEY="sk-..."
-
-# 4  Run a prototype debate
+#   Run a prototype debate
 python scripts/run_debate.py --repeats 1 --turns 2 --quiet --out runs/YYYYMMDD/test.json
 ```
 
 ---
 
-## Repo layout (2025‑08)
+## Repo layout 
 
 ```
-ai-debate-p5/              – GitHub root
+llm-debate/              – GitHub root
 │
 ├─ src/ai_debate_p5/       – importable package
 │   ├─ __init__.py
@@ -70,12 +61,13 @@ ai-debate-p5/              – GitHub root
 │   └─ run_debate.py
 │
 ├─ docs/
-│   └─ context_p5_plus_fcc.txt   – concatenated P5 (2023) + FCC (2025) evidence summary
-│
+│   └─ p5_summary.txt
+│   └─ fcc_summary.txt    
+    
 ├─ runs/                   – outputs (logs, stats, Elo CSVs)
-├─ .gitignore
+├─ debate_sample
 ├─ requirements.txt
-└─ README.md               – you are here
+└─ README.md               
 ```
 
 ---
