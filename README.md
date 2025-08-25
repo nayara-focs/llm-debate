@@ -1,10 +1,7 @@
-# AI-debate 🤖⚛️  
-[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+# AI Debate for Science: A Case Study in Particle Physics Strategy
 
-**Prototype – AI Debate for particle-physics strategy (P5 2023 + FCC 2025, neutral multi-corpus)**
+Companion code and minimal data for our paper on structured LLM debate for particle-physics strategy; includes scripts to run the debates, and compute win rates/Elo.
 
-- Large-language-model **“Strategy 1 vs Strategy 2”** debates over a **combined evidence context**: the US **[P5 (2023)](https://www.usparticlephysics.org/2023-p5-report/)** report and CERN’s **[FCC Feasibility Study (2025)](https://fcc.web.cern.ch/)**.  
-- Two GPT-style agents argue, an LLM judge decides who’s more persuasive (emitting a strict `WINNER: Strategy-1` / `WINNER: Strategy-2` line), and the whole exchange (with token stats + context) is logged.
 --- 
 
 ## How it works – high-level flow
@@ -89,10 +86,4 @@ llm-debate/
 └─ README.md               
 ```
 
----
-## References
-
-- **US P5 Report (2023):** [https://www.usparticlephysics.org/2023-p5-report/](https://www.usparticlephysics.org/2023-p5-report/)
-- **FCC Feasibility Study (2025):** See: see CERN’s overview announcing the report (links to Vols 1–3): <https://home.cern/news/news/accelerators/cern-releases-report-feasibility-possible-future-circular-collider>
-- **Khan et al. (2024):** *Debating with More Persuasive LLMs Leads to More Truthful Answers*, arXiv:2402.06782 [https://arxiv.org/abs/2402.06782](https://arxiv.org/abs/2402.06782)
 
