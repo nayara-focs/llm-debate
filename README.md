@@ -37,8 +37,28 @@ Quant stats  →  win-rate · average tokens / turn · Elo (BT)
 
 ```bash
 
-#   Run a prototype debate
-python scripts/run_debate.py --repeats 1 --turns 2 --quiet --out runs/YYYYMMDD/test.json
+### Install and set your key
+
+# create env and install
+pip install -r requirements.txt
+
+# set your key (Unix/macOS)
+export OPENAI_API_KEY=sk-...
+
+# or use the .env file
+cp .env.example .env
+# edit .env and add: OPENAI_API_KEY=sk-...
+
+#   Run a prototype debate (Choose the roster and context in config.py)
+python scripts/run_debate.py \
+  --repeats 6 \
+  --turns 6 \
+  --context-order random \
+  --seed 42 \
+  --ctx-p5  contexts/p5_summary.txt \
+  --ctx-fcc contexts/fcc_summary.txt \
+  --quiet \
+  --out runs/$(date +%Y%m%d)/test.json
 ```
 
 ---
