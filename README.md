@@ -72,5 +72,5 @@ llm-debate/
 
 - **US P5 Report (2023):** [https://www.usparticlephysics.org/2023-p5-report/](https://www.usparticlephysics.org/2023-p5-report/)
 - **FCC Feasibility Study (2025):** See: see CERN’s overview announcing the report (links to Vols 1–3): <https://home.cern/news/news/accelerators/cern-releases-report-feasibility-possible-future-circular-collider>
-- **Khan et al. (2024):** *Debating with More Persuasive LLMs Leads to More Truthful Answers*, arXiv:2402.06782 — [https://arxiv.org/abs/2402.06782](https://arxiv.org/abs/2402.06782)
+- **Khan et al. (2024):** *Debating with More Persuasive LLMs Leads to More Truthful Answers*, arXiv:2402.06782 [https://arxiv.org/abs/2402.06782](https://arxiv.org/abs/2402.06782)
 
