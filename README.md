@@ -48,22 +48,26 @@ python scripts/run_debate.py --repeats 1 --turns 2 --quiet --out runs/YYYYMMDD/t
 ```
 llm-debate/              
 │
-├─ src/ai_debate_p5/       – importable package
+├─ src/ai_debate/       
 │   ├─ debate_engine.py    – debate loop & openings
-│   ├─ judge_module.py     – impartial LLM judge
+│   ├─ judge_module.py     – LLM judge
 │   ├─ stats_module.py     – global counters / helpers
 │   └─ stats/elo_bt.py     – Bradley–Terry fitter + win matrix
 │
-├─ scripts/                – CLI entry points
+├─ scripts/
+|   ├─ compute_elo.py           
 │   └─ run_debate.py
 │
-├─ docs/
+├─ docs/                   - source samples
 │   └─ p5_summary.txt
-│   └─ fcc_summary.txt    
-    
+│   └─ fcc_summary.txt
+|   └─ context_p5_plus_fcc.txt
+|  
 ├─ runs/                   – outputs (logs, stats, Elo CSVs)
-├─ debate_sample
+|   └─ debate_sample
+|
 ├─ requirements.txt
+├─ config.py
 └─ README.md               
 ```
 
