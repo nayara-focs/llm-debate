@@ -49,7 +49,7 @@ export OPENAI_API_KEY=sk-...
 cp .env.example .env
 # edit .env and add: OPENAI_API_KEY=sk-...
 
-#   Run a prototype debate (Choose the roster and context in config.py)
+# Run a prototype debate (Choose the roster and context in config.py)
 python scripts/run_debate.py \
   --repeats 6 \
   --turns 6 \
