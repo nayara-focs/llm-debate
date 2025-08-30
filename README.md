@@ -10,8 +10,8 @@ TL;DR: A reproducible LLM-debate protocol for science-strategy choices, tested o
 
 ``` 
 P5 + FCC (static context) ──► Neutral initial prompt
-                               "Given P5 (2023) and FCC (2025), what’s the best
-                                strategy for HEP in the next decade?"
+                               "Given P5 (2023) and FCC (2025), what is the best
+                                strategy for High Energy Physics in the next decade?"
 
                    ┌──────────────── diverse openings ────────────────┐
                    │  Strategy-1 Opening A   Strategy-1 Opening B  …  │
@@ -75,11 +75,9 @@ llm-debate/
 |   ├─ compute_elo.py           
 │   └─ run_debate.py
 │
-├─ docs/                   - source samples
-│   └─ p5_summary.txt
-│   └─ fcc_summary.txt
-|   └─ context_p5_plus_fcc.txt
-|  
+├─ docs/                   - source sample
+│   └─ context_p5_plus_fcc.txt
+│   
 ├─ runs/                   – outputs (logs, stats, Elo CSVs)
 |   └─ debate_example.json
 |
