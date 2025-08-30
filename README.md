@@ -76,7 +76,7 @@ llm-debate/
 │   └─ run_debate.py
 │
 ├─ docs/                   - source sample
-│   └─ context_p5_plus_fcc.txt
+│   └─ context_fcc_plus_p5.txt
 │   
 ├─ runs/                   – outputs (logs, stats, Elo CSVs)
 |   └─ debate_example.json
