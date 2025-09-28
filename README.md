@@ -52,8 +52,8 @@ python scripts/run_debate.py \
   --turns 6 \
   --context-order random \
   --seed 42 \
-  --ctx-p5  contexts/p5_summary.txt \
-  --ctx-fcc contexts/fcc_summary.txt \
+  --ctx-p5  docs/p5_summary.txt \
+  --ctx-fcc docs/fcc_summary.txt \
   --quiet \
   --out runs/$(date +%Y%m%d)/test.json
 ```
