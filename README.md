@@ -39,7 +39,7 @@ Quant stats  →  win-rate · average tokens/turn · Elo (BT)
 # create env and install
 pip install -r requirements.txt
 
-# set your key (Unix/macOS)
+# set your key 
 export OPENAI_API_KEY=sk-...
 
 # or use the .env file
