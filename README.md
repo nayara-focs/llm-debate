@@ -1,8 +1,8 @@
-# AI Debate for Science: A Case Study in Particle Physics
+# AI Debate for Particle Physics
 
 ### Companion code and minimal data for our paper on structured LLM debate for particle-physics strategy; includes scripts to run the debates and compute win rates/Elo.
 
-TL;DR: A reproducible LLM-debate protocol for science-strategy choices, tested on particle-physics roadmaps. We randomize context order, balance label assignment, compare a best-of-N opening vs temperature-controlled debaters, and report stance win rates and Elo-like (Bradley–Terry) ratings to support expert deliberation.
+TL;DR: A reproducible LLM-debate protocol for science-strategy choices, tested on particle-physics roadmaps. We randomize context order, balance label assignment, compare a best-of-N opening vs. temperature-controlled debaters, and report stance win rates and Elo-like (Bradley–Terry) ratings to support expert deliberation.
 
 --- 
 
@@ -11,7 +11,7 @@ TL;DR: A reproducible LLM-debate protocol for science-strategy choices, tested o
 ``` 
 P5 + FCC (static context) ──► Neutral initial prompt
                                "Given P5 (2023) and FCC (2025), what is the best
-                                strategy for High Energy Physics in the next decade?"
+                                Strategy for High Energy Physics in the next decade?"
 
                    ┌──────────────── diverse openings ────────────────┐
                    │  Strategy-1 Opening A   Strategy-1 Opening B  …  │
@@ -25,7 +25,7 @@ Debate Matches  (A1 vs B1, A1 vs B2, …) – multi-round back-and-forth
 LLM Judge  →  WINNER: Strategy-1 / WINNER: Strategy-2  +  rationale
                                         │
                                         ▼
-Quant stats  →  win-rate · average tokens / turn · Elo (BT) 
+Quant stats  →  win-rate · average tokens/turn · Elo (BT) 
 ```
 
 ---
@@ -68,7 +68,7 @@ llm-debate/
 ├─ src/ai_debate/       
 │   ├─ debate_engine.py    – debate loop & openings
 │   ├─ judge_module.py     – LLM judge
-│   ├─ stats_module.py     – global counters / helpers
+│   ├─ stats_module.py     – global counters/helpers
 │   └─ stats/elo_bt.py     – Bradley–Terry fitter + win matrix
 │
 ├─ scripts/
@@ -76,9 +76,10 @@ llm-debate/
 │   └─ run_debate.py
 │
 ├─ docs/                   - source sample
-│   └─ context_fcc_plus_p5.txt
+│   ├─ p5_summary.txt           
+│   └─ fcc_summary.txt
 │   
-├─ runs/                   – outputs (logs, stats, Elo CSVs)
+├─ runs/                   – outputs (logs, stats)
 |   └─ debate_example.json
 |
 ├─ requirements.txt
