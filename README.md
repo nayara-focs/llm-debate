@@ -6,7 +6,7 @@ TL;DR: A reproducible LLM-debate protocol for science-strategy choices, tested o
 
 ## Writeup
 
-[LLM Debate for Scientific Decision Making: A Case Study in Particle Physics](docs/writeup.pdf) by Nayara Fonseca.
+[LLM Debate for Scientific Decision Making](docs/writeup.pdf) by Nayara Fonseca.
 
 --- 
 
